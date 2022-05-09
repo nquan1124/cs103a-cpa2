@@ -1,0 +1,33 @@
+<h1>The Resulting books of Your Search are</h1>
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Country</th>
+            <th>Language</th>
+            <th>Link</th>
+            <th>Pages</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <% for (book of books) {
+        const title = book.title;
+        const author = book['author'];
+        const country = book['country'];
+        const language = book['language'];
+        const link = book['link'];
+        const pages = book['pages'];
+         %>
+      <tr class="mb-2"> 
+        <td><%=title %></td>
+        <td><%=author %></td>
+        <td><%=country %></td>
+        <td><%=language %></td>
+        <td><%=link %></td>
+        <td><%=pages %></td>
+    <% } %>
+    </tbody>
+</table>
+

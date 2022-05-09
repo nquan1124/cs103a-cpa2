@@ -1,0 +1,47 @@
+
+
+    <div class="jumbotron">
+        <h1>CPA03 Find Books</h1>
+        <p></p>
+    </div>
+
+    <p class="p-1 m-1 border border-primary bg-danger" style = "text-align: center ;font-size:60px">
+        Find a new book to read for this summer! Use the pages form to find a long or short read. Or if you have favorite author find more books from them!
+    </p>
+    
+    <% if (true) {%>  
+        
+        <form method="post" action="/books/byAuthor" class="p-3 m-3 border border-primary bg-light">
+            Show books by author: 
+              <input type="text" name="author" 
+                     placeholder="e.g. Jorge Luis Borges">
+            <input type="submit">
+        </form>
+
+        <form method="post" action="/books/byPages" class="p-3 m-3 border border-primary bg-light">
+            Show books by pages: 
+              <input type="text" name="pages" 
+                     placeholder="e.g. 224">
+            <input type="submit">
+        </form>
+        <br>
+    <% } %>
+
+
+
+    <!--        <form method="post" action="/courses/by">
+        <form method="post" action="/courses/byInst">
+            Show Courses by Instructor Email: 
+            <input type="text" name="email" 
+                   placeholder="e.g. tjhickey">
+            <input type="submit">
+        </form>
+        <br>
+        <form method = "post" action = "/courses/byKeyword">
+            Show Course by byKeyword
+            <input type ="text" name = "keyword" placeholder="e.g. Data">
+            <input type = "submit">
+        </form>
+    -->
+
+
